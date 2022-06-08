@@ -8,14 +8,10 @@
 
 
 
-let choices = ['rock', 'paper', 'scissors'];
+let choices = ['rock', 'paper', 'scissor'];
 
-let userChoice = () => {
-    let userChoice = parseInt(prompt('Rock Paper Scissors? (1 for rock, 2 for paper, 3 for scissors')) - 1;
-    return choices[userChoice];
-}
 
-let computerChoice = () => {
+function computerChoice() {
     let randomChoice = Math.floor(Math.random() * (3 - 0) + 0);
     return choices[randomChoice];
 };
@@ -50,4 +46,12 @@ function compareChoices(userChoice,computerChoice) {
     tieCheck(userChoice, computerChoice);
 }
 
-compareChoices(userChoice(), computerChoice())
+const rockChoice = document.getElementById("rock");
+const paperChoice = document.getElementById("paper");
+const scissorChoice = document.getElementById("scissor")
+
+//logs rock 
+rockChoice.addEventListener("click", () => (compareChoices('rock', computerChoice())));
+paperChoice.addEventListener("click", () => (compareChoices('paper', computerChoice())));
+scissorChoice.addEventListener("click", () => (compareChoices('rock', computerChoice())));
+//console.log(rockChoice)
