@@ -1,0 +1,64 @@
+body {
+    background-color: #090;
+}
+
+#play-area {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title {
+    font-size: 90px;
+}
+
+#buttons {
+    flex-direction: row;
+}
+
+#rock {
+    background-image: url('./images/rock.png');
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#paper {
+    background-image: url('./images/paper.png');
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#scissor {
+    background-image: url('./images/scissor.png');
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#scores {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3em;
+}
+
+#player-score {
+    background-color: blanchedalmond;
+    width: 200px;
+    height: 200px;
+    margin-right: 3em;
+    font-size: 50px;
+    border-radius: 10%;
+    box-shadow: 8px 8px 2px 2px #333;
+}
+
+#computer-score {
+    background-color: antiquewhite;
+    width: 200px;
+    height: 200px;
+    margin-left: 3em;
+    font-size: 50px;
+    border-radius: 10%;
+    box-shadow: 8px 8px 2px 2px #333;
+}
